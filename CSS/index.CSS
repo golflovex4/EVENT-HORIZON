@@ -1,13 +1,13 @@
 /* CSS file --> index.html */
 /* (1) Tag Selector */
 body{
-    background-image: url('150.png');
+    background-image: url("/img/clouds.png");
     background-attachment: fixed;  
     background-size: cover;
 }
 h1{
 text-align: center;
-font-family: cursive;
+font-family: Audiowide;
 /*background-color: #FCE38A;*/
 }
 h2{
@@ -56,7 +56,7 @@ font-weight: bolder;
 
 /* div */
 .top-container{
-background-color: 	#6473e26e;
+background-color: 	#fcfcfc00;
 }
 .under-BG{
 background-color: rgba(245, 245, 245, 0.466);
