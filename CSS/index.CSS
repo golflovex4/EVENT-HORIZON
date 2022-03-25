@@ -1,7 +1,7 @@
 :root
 {
-    --accent : #e9d700;/*สี่ปุ่ม*/
-    --accentHover: #dab600;
+    --accent : #cccc00;/*สี่ปุ่ม*/
+    --accentHover: #eeee00;
     --dark60: rgba(238, 238 , 239, 0.9);
     --light : #ffffff;
     --transition : all 0.3s ease 0s; /*delay time*/
@@ -14,7 +14,7 @@
     padding: 0;
 }
 html,body{
-    height: 100%; /*fix ความสูง*/
+    height: 100%;  /*fix ความสูง*/
     overflow: auto;
 }
 a, button, p
@@ -26,29 +26,72 @@ a, button{
     cursor: pointer; /*link element*/
 }   
 
-main
+main /*สร้างกริต*/
 {
     height: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    grid-template-columns: auto;
     
 }
 body{
-    background-image: url("/img/FirstPage.png");
-    background-size: cover;  
+    background-color:#07162D;
     }
+article
+{
+    grid-column: 1 / span 2; /*header Star 2 other to last colum*/
+}
+aside
+{
+    grid-column:1 / span 2;
+}
+footer
+{
+    grid-column:1 / span 2;
+}
 .button1 {
 
-    grid-column: 2 / span 3; /*header Star 2 other to last colum*/
-    background-color: var(--accent);
-    transition: var(--transition);
+    grid-column: 3 / span 2; /*header Star 2 other to last colum*/
+}
 .homepage
-{
+{   
+    /*โครงสร้างตัวปุ่ม*/
     background-color: var(--accent);
-    padding: 8px 25px;
+    padding: 24px 100px;
     transition: var(--transition);
-}
-}
-.p-Footer{
+
+    /*กำหนดตำแหน่งปุ่ม*/
+    position: absolute;
+    top: 80%;
+    width: 20%;
+    right: 42%;
+    
+    /*ขนาดอักษรในปุ่ม*/
     text-align: center;
-    }
+    font-size: 30px;
+    
+}
+.content1
+{
+    font-family: Audiowide;
+    color: rgba(255, 255, 255, 0.774);
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+}
+.content2
+{
+    font-family: Audiowide;
+    color: rgba(255, 255, 255, 0.774);
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+}
+.credit
+{
+    text-align: center;
+}
