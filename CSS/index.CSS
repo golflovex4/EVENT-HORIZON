@@ -1,75 +1,54 @@
-/* CSS file --> index.html */
-/* (1) Tag Selector */
+:root
+{
+    --accent : #e9d700;/*สี่ปุ่ม*/
+    --accentHover: #dab600;
+    --dark60: rgba(238, 238 , 239, 0.9);
+    --light : #ffffff;
+    --transition : all 0.3s ease 0s; /*delay time*/
+}
+/* All Section */
+*{
+    /*Clear margin and padding*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%; /*fix ความสูง*/
+    overflow: auto;
+}
+a, button, p
+{
+    font-family: Audiowide;
+    color: var(--light);
+}
+a, button{
+    cursor: pointer; /*link element*/
+}   
+
+main
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
 body{
-    background-image: url("/img/clouds.png");
-    background-attachment: fixed;  
-    background-size: cover;
+    background-image: url("/img/FirstPage.png");
+    background-size: cover;  
+    }
+.button1 {
+
+    grid-column: 2 / span 3; /*header Star 2 other to last colum*/
+    background-color: var(--accent);
+    transition: var(--transition);
+.homepage
+{
+    background-color: var(--accent);
+    padding: 8px 25px;
+    transition: var(--transition);
 }
-h1{
-text-align: center;
-font-family: Audiowide;
-/*background-color: #FCE38A;*/
-}
-h2{
-text-align: center;
-font-family: cursive;
-font-weight: normal;
-/*background-color: #EAFFD0;*/
-}
-h4{
-text-align: center;
-font-family: Aclonica;
-font-weight: normal;
-}
-table{
-width: 100%;
-text-align: center;
-}
-th{
-width: 33.33%; 
-vertical-align: top;
-}
-/* (2) Class Selector */
-.p-Aboutme{
-font-weight: normal; 
-text-align: justify;
-}
-.p-Name{
-font-family: normal;
-font-weight: normal;
-}
-.p-head{
-font-family: medium;
 }
 .p-Footer{
-text-align: center;
-}
-.name{
-text-decoration: underline;
-color: rgb(0, 0, 0);
-}
-/* (3) Id Selector */
-#th-Details{
-text-align: left;
-font-weight: bolder;
-}
-
-/* div */
-.top-container{
-background-color: 	#fcfcfc00;
-}
-.under-BG{
-background-color: rgba(245, 245, 245, 0.466);
-}
-.table-menu td:hover{
-background-color: #006effce;
-}
-.table-menu {
-background-color: 	#659ff1;
-}
-.table-content h2{
-background-color:#6473e2;    
-}
-.table-content img:hover{
-background-color: rgb(17, 146, 233);
-}
+    text-align: center;
+    }
