@@ -46,7 +46,7 @@ div  /*แถมด้านบนของเว็บ*/
 {
     background-color: rgba(211, 211, 211, 0.322);
     width: 99.8%;
-    height: 65%;
+    height: 70%;
     border:none;
 }
 
@@ -63,6 +63,18 @@ article  /*ช่องคอนเท้น*/
       border:none;
 }
 article2  /*ช่องคอนเท้น*/ 
+{
+      background-color: rgba(211, 211, 211, 0.322);
+      width: 85%;
+      height: 90%;
+      padding: 10%;
+      margin: 10%;
+      margin-left: 7%;
+      margin-top: 1%;
+      margin-bottom: 20%;
+      border:none;
+}
+article3  /*ช่องคอนเท้น*/ 
 {
       background-color: rgba(211, 211, 211, 0.322);
       width: 85%;
@@ -191,3 +203,25 @@ button {
     transform: rotateX(-90deg);
   }
   
+/*Content Css*/
+.F-22
+{
+  position: absolute;
+  top: 30%;
+  right: 65%;
+}
+.F-22_Name
+{
+  position: absolute;
+  top: 20%;
+  right: 50%;
+  font-size: 40px;
+}
+.F-22_Info
+{
+  font-family: Audiowide;
+  font-size: 25px;
+  position: absolute;
+  top: 30%;
+  right: 18%;
+}

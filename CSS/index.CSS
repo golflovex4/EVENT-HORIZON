@@ -166,5 +166,7 @@ button:hover::after, button:focus::after {
 .logo
 {
   position: absolute;
-  top: 50%;
+  top: 20%;
+  right: 75%;
+
 }
