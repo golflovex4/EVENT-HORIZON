@@ -1,74 +1,125 @@
-/* CSS file --> index.html */
-/* (1) Tag Selector */
+
+:root
+{
+    --accent : #cccc00;/*สี่ปุ่ม*/
+    --accentHover: #eeee00;
+    --dark60: rgba(238, 238 , 239, 0.9);
+    --light : #ffffff;
+    --transition : all 0.3s ease 0s; /*delay time*/
+}
+/* All Section */
+*{
+    /*Clear margin and padding*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;  /*fix ความสูง*/
+}
+a, button, p
+{
+    font-family: Audiowide;
+    color: var(--light);
+}
+a, button{
+    cursor: pointer; /*link element*/
+}   
+
+main /*สร้างกริต*/
+{
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    
+}
 body{
-    background-image: url("/img/");
-    background-attachment: fixed;  
-    background-size: cover;
+    background-color: #07162D;;
 }
 h1{
 text-align: center;
 font-family: Audiowide;
-/*background-color: #FCE38A;*/
 }
-h2{
-text-align: center;
-font-family: cursive;
-font-weight: normal;
-/*background-color: #EAFFD0;*/
+
+div {
+    background-color: rgba(211, 211, 211, 0.322);
+    width: 99.8%;
+    height: 8%;
+    border:none;
+  }
+.credit
+{
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
 }
-h4{
-text-align: center;
-font-family: Aclonica;
-font-weight: normal;
+.logo 
+{   
+    object-position:top left;
 }
-table{
-width: 100%;
-text-align: center;
+.Logo-EVENT
+{
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute;
+    top: 2%;
+    width: 25%;
 }
-th{
-width: 33.33%; 
-vertical-align: top;
+
+
+
+/*Button*/
+button {
+    margin: 20px;
 }
-/* (2) Class Selector */
-.p-Aboutme{
-font-weight: normal; 
-text-align: justify;
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
 }
-.p-Name{
-font-family: normal;
-font-weight: normal;
+.btn-11 {
+    border: none;
+    background: rgb(251,33,117);
+    background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+    color: #fff;
+    overflow: hidden;
 }
-.p-head{
-font-family: medium;
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
 }
-.p-Footer{
-text-align: center;
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
 }
-.name{
-text-decoration: underline;
-color: rgb(0, 0, 0);
+.btn-11:hover{
+    opacity: .7;
 }
-/* (3) Id Selector */
-#th-Details{
-text-align: left;
-font-weight: bolder;
-}
-/* div */
-.top-container{
-background-color: 	#fcfcfc00;
-}
-.under-BG{
-background-color: rgba(245, 245, 245, 0.466);
-}
-.table-menu td:hover{
-background-color: #006effce;
-}
-.table-menu {
-background-color: 	#659ff1;
-}
-.table-content h2{
-background-color:#6473e2;    
-}
-.table-content img:hover{
-background-color: rgb(17, 146, 233);
+.btn-11:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
 }

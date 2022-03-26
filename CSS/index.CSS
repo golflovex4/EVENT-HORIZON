@@ -163,3 +163,8 @@ button:hover::after, button:focus::after {
     font-size: 20px;
     color: #ffffff;
 }
+.logo
+{
+  position: absolute;
+  top: 50%;
+}
