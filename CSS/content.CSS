@@ -30,12 +30,18 @@ main /*สร้างกริต*/
 {
     height: 100%;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: auto;
-    
+    grid-template-columns:minmax(60px, 1fr);repeat:(6,minmax(50px,190px))minmax(60px,1fr);
 }
 body{
     background-color: #07162D;;
+}
+header
+{
+  grid-column: 1 / span 9;
+}
+footer
+{
+  grid-column: 1 / span 9;
 }
 h1{
 text-align: center;
@@ -48,44 +54,37 @@ div  /*แถมด้านบนของเว็บ*/
     width: 99.8%;
     height: 70%;
     border:none;
+    grid-column: 1 / span 9;
+}
+.page1 /*ช่องคอนเท้น*/ 
+{
+      background-color: rgba(211, 211, 211, 0.322);
+      width: 85%;
+      height: 90%;
+      padding: 10%;
+      margin: 10%;
+      margin-left: 7%;
+      margin-top: 1%;
+      margin-bottom: 20%;
+      border:none;
+}
+.page2  /*ช่องคอนเท้น*/ 
+{
+      background-color: rgba(211, 211, 211, 0.322);
+      width: 85%;
+      height: 90%;
+      padding: 10%;
+      margin: 10%;
+      margin-left: 7%;
+      margin-top: 1%;
+      margin-bottom: 20%;
+      border:none;
+      grid-column: 1 / span9;
+      grid-row: 3 / span 9;
 }
 
-article  /*ช่องคอนเท้น*/ 
-{
-      background-color: rgba(211, 211, 211, 0.322);
-      width: 85%;
-      height: 90%;
-      padding: 10%;
-      margin: 10%;
-      margin-left: 7%;
-      margin-top: 1%;
-      margin-bottom: 20%;
-      border:none;
-}
-article2  /*ช่องคอนเท้น*/ 
-{
-      background-color: rgba(211, 211, 211, 0.322);
-      width: 85%;
-      height: 90%;
-      padding: 10%;
-      margin: 10%;
-      margin-left: 7%;
-      margin-top: 1%;
-      margin-bottom: 20%;
-      border:none;
-}
-article3  /*ช่องคอนเท้น*/ 
-{
-      background-color: rgba(211, 211, 211, 0.322);
-      width: 85%;
-      height: 90%;
-      padding: 10%;
-      margin: 10%;
-      margin-left: 7%;
-      margin-top: 1%;
-      margin-bottom: 20%;
-      border:none;
-}
+
+
 .credit
 {
     text-align: center;
