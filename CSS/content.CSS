@@ -30,7 +30,7 @@ main /*สร้างกริต*/
 {
     height: 100%;
     display: grid;
-    grid-template-columns:minmax(60px, 1fr)repeat(6,minmax(50px,190px))minmax(60px,1fr);
+    grid-template-columns:minmax(60px, 1fr) repeat(6,minmax(50px,190px))minmax(60px,1fr);
 }
 body{
       background-color: #ffffff;

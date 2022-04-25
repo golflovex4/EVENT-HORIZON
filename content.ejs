@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>The EVENT HORIZON</title>
+    <!--Reference Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Aclonica'rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    
+
+    <!--Reference Social Media Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+ 
+    <!--External CSS => 3rd Priority-->
+    <link rel="stylesheet" href="CSS/content.CSS">
+ 
+    <!--Add Favicon Icon => https://www.favicon.cc/-->
+    <link rel="icon" href="/img/favicon.ico">
+ 
+    <!--Internal CSS => 2nd Priority-->
+    <!--<style>
+        /* CSS Comments */
+        /* CSS Syntax => Selector { property: value; } */
+        /* (1) Tag Selector */
+    </style>-->
+ 
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <img class="logo" src="/img/Logo2-1.png" alt="logo" width="110" height="70">
+                <h1 class="Logo-EVENT">EVENT HORIZON</h1>
+                <button class="custom-btn btn-12"><span>Click!</span><span>contact us</span></button>
+            </div>
+       </header>
+                <!--Add para meter for each loop-->
+                <% obj_Plane.forEach(function(Plane){ %>
+                    <div>
+                        <img  src="<%= Plane.img %> " alt="pic">
+                        <p> <%= Plane.name %></p>
+                        <p> <%= Plane.Crew %></p>  
+                    </div>
+                    <% }) %>   
+  <footer>
+    <p class="credit">© 2022 By THE EVENT HORIZON TEAM</p>
+</footer>
+    </main>
+    
+</body>
+</html>
