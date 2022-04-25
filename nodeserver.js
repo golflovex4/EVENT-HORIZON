@@ -4,27 +4,89 @@ const port = 8080
 
 var Plane = [
     {
-        img : "img/FF-22.png",
-        name : "dd",
-        Crew : "ddd",
-        FuelCapacity : "ddd",
-        MaximumSpeed :"ddd",
-        Range : "ddd",
-        CombatRange : "ddd",
-        Guns : "ddd",
-        Hardpoints : "ddd"
+        img :          "img/F-22.jpg",
+        name :         "Chengdu J-20",
+        Crew :         "Crew : one (pilot)",
+        Fuel_Capacity : "FuelCapacity : 12,000 kg",
+        Maximum_Speed : "MaximumSpeed : Mach 2.0",
+        Range :         "Range : 5,500 km",
+        Combat_Range :  "CombatRange : 2,000 km",
+        Service_Ceiling:"Service_Ceiling : 20,000 m",
+        Guns :          "Guns : - - -",
+        Maximum_Weapon_Capacity :   "Maximum weapon capacity : 11,000 kg "
     },
     {
-        img : "img/Logo/F-22",
-        name : "ddd",
-        Crew : "dddd",
-        FuelCapacity : "ddd",
-        MaximumSpeed : "dddd",
-        Range : "ddd",
-        CombatRange : "ddd",
-        Guns : "dddddddddddddddddddddddddd",
-        Hardpoints : "ddddddd"
-    }
+        img :          "img/F-22.jpg",
+        name :         "",
+        Crew :         "Crew : ",
+        Fuel_Capacity : "FuelCapacity : ",
+        Maximum_Speed : "MaximumSpeed : ",
+        Range :         "Range : ",
+        Combat_Range :  "CombatRange : ",
+        Service_Ceiling:"Service_Ceiling : ",
+        Guns :          "Guns : ",
+        Maximum_Weapon_Capacity :   "Maximum weapon capacity :  "
+    },
+    {
+        img :          "img/F-22.jpg",
+        name :         "",
+        Crew :         "Crew : ",
+        Fuel_Capacity : "FuelCapacity : ",
+        Maximum_Speed : "MaximumSpeed : ",
+        Range :         "Range : ",
+        Combat_Range :  "CombatRange : ",
+        Service_Ceiling:"Service_Ceiling : ",
+        Guns :          "Guns : ",
+        Maximum_Weapon_Capacity :   "Maximum weapon capacity :  "
+    },
+    {
+        img :          "img/F-22.jpg",
+        name :         "",
+        Crew :         "Crew : ",
+        Fuel_Capacity : "FuelCapacity : ",
+        Maximum_Speed : "MaximumSpeed : ",
+        Range :         "Range : ",
+        Combat_Range :  "CombatRange : ",
+        Service_Ceiling:"Service_Ceiling : ",
+        Guns :          "Guns : ",
+        Maximum_Weapon_Capacity :   "Maximum weapon capacity :  "
+    },
+    {
+        img :          "img/F-22.jpg",
+        name :         "",
+        Crew :         "Crew : ",
+        Fuel_Capacity : "FuelCapacity : ",
+        Maximum_Speed : "MaximumSpeed : ",
+        Range :         "Range : ",
+        Combat_Range :  "CombatRange : ",
+        Service_Ceiling:"Service_Ceiling : ",
+        Guns :          "Guns : ",
+        Maximum_Weapon_Capacity :   "Maximum weapon capacity :  "
+    },
+    {
+        img :          "img/F-22.jpg",
+        name :         "",
+        Crew :         "Crew : ",
+        Fuel_Capacity : "FuelCapacity : ",
+        Maximum_Speed : "MaximumSpeed : ",
+        Range :         "Range : ",
+        Combat_Range :  "CombatRange : ",
+        Service_Ceiling:"Service_Ceiling : ",
+        Guns :          "Guns : ",
+        Maximum_Weapon_Capacity :   "Maximum weapon capacity :  "
+    },
+    {
+        img :          "img/F-22.jpg",
+        name :         "",
+        Crew :         "Crew : ",
+        Fuel_Capacity : "FuelCapacity : ",
+        Maximum_Speed : "MaximumSpeed : ",
+        Range :         "Range : ",
+        Combat_Range :  "CombatRange : ",
+        Service_Ceiling:"Service_Ceiling : ",
+        Guns :          "Guns : ",
+        Maximum_Weapon_Capacity :   "Maximum weapon capacity :  "
+    },
 ];
 
 
@@ -32,8 +94,7 @@ var Plane = [
 app.set('view engine','ejs')
 
 //conect folder
-app.use(express.static('img'))
-app.use(express.static('views'))
+app.use(express.static('public'))
 
 //Open Server
 app.listen(port,() => {
@@ -47,4 +108,8 @@ app.get("/hello",(req,res) =>{
 
 app.get("/content",(req,res) =>{
     res.render('content', {obj_Plane : Plane})
+})
+
+app.get("/index",(req,res) =>{
+    res.render('index')
 })

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>The EVENT HORIZON</title>
+    <title>THE EVENT HORIZON</title>
     <!--Reference Google Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Aclonica'rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
  
     <!--External CSS => 3rd Priority-->
-    <link rel="stylesheet" href="/views/content.CSS">
+    <link rel="stylesheet" href="content.CSS">
  
     <!--Add Favicon Icon => https://www.favicon.cc/-->
     <link rel="icon" href="/img/favicon.ico">
@@ -36,12 +36,22 @@
        </header>
                 <!--Add para meter for each loop-->
                 <% obj_Plane.forEach(function(Plane){ %>
-                    <div>
-                        <img  src="<%= Plane.img %> " alt="pic">
-                        <p> <%= Plane.name %></p>
-                        <p> <%= Plane.Crew %></p>  
+                    <div class="page2">
+                        <h2 class="headname"> <%= Plane.name %></h2>
+                        <img class="img" src="<%= Plane.img %> " alt="pic" width="800" height="500">  
+                        <p class="con2"> <%= Plane.name %></p>
+                        <p class="con"> <%= Plane.Crew %></p>
+                        <p class="con"> <%= Plane.Fuel_Capacity %></p>
+                        <p class="con"> <%= Plane.Maximum_Speed %></p>
+                        <p class="con"> <%= Plane.Range %></p>
+                        <p class="con"> <%= Plane.Combat_Range %></p>
+                        <p class="con"> <%= Plane.Service_Ceiling %></p>
+                        <p class="con"> <%= Plane.Guns %></p>
+                        <p class="con"> <%= Plane.Maximum_Weapon_Capacity %></p>
+
                     </div>
-                    <% }) %>   
+                    <% }) %>
+                   
   <footer>
     <p class="credit">© 2022 By THE EVENT HORIZON TEAM</p>
 </footer>
