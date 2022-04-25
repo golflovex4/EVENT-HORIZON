@@ -4,26 +4,26 @@ const port = 8080
 
 var Plane = [
     {
-        img : "img/Logo/pexels-olia-danilevich-4974914 1.png",
-        name : "",
-        Crew : "",
-        Fuel capacity : ""
-        Maximum speed:"",
-        Range:"",
-        Combat range:"",
-        Guns:"",
-        Hardpoints:""
+        img : "img/FF-22.png",
+        name : "dd",
+        Crew : "ddd",
+        FuelCapacity : "ddd",
+        MaximumSpeed :"ddd",
+        Range : "ddd",
+        CombatRange : "ddd",
+        Guns : "ddd",
+        Hardpoints : "ddd"
     },
     {
-        img : "img/Logo/pexels-olia-danilevich-4974914 1.png",
-        name : "",
-        Crew : "",
-        Fuel capacity : ""
-        Maximum speed:"",
-        Range:"",
-        Combat range:"",
-        Guns:"",
-        Hardpoints:""
+        img : "img/Logo/F-22",
+        name : "ddd",
+        Crew : "dddd",
+        FuelCapacity : "ddd",
+        MaximumSpeed : "dddd",
+        Range : "ddd",
+        CombatRange : "ddd",
+        Guns : "dddddddddddddddddddddddddd",
+        Hardpoints : "ddddddd"
     }
 ];
 
@@ -33,7 +33,7 @@ app.set('view engine','ejs')
 
 //conect folder
 app.use(express.static('img'))
-app.use(express.static('CSS'))
+app.use(express.static('views'))
 
 //Open Server
 app.listen(port,() => {
