@@ -4,7 +4,7 @@
     --accent : #cccc00;/*สี่ปุ่ม*/
     --accentHover: #eeee00;
     --dark60: rgba(238, 238 , 239, 0.9);
-    --light : #ffffff;
+    --light : #0400ff;
     --transition : all 0.3s ease 0s; /*delay time*/
 }
 /* All Section */
@@ -30,10 +30,10 @@ main /*สร้างกริต*/
 {
     height: 100%;
     display: grid;
-    grid-template-columns:minmax(60px, 1fr);repeat:(6,minmax(50px,190px))minmax(60px,1fr);
+    grid-template-columns:minmax(60px, 1fr)repeat(6,minmax(50px,190px))minmax(60px,1fr);
 }
 body{
-    background-color: #07162D;;
+      background-color: #ffffff;
 }
 header
 {
@@ -50,15 +50,14 @@ font-family: Audiowide;
 
 div  /*แถมด้านบนของเว็บ*/ 
 {
-    background-color: rgba(211, 211, 211, 0.322);
+    background-color: #0c4a95;
     width: 99.8%;
-    height: 70%;
+    height: 80px;
     border:none;
     grid-column: 1 / span 9;
 }
 .page1 /*ช่องคอนเท้น*/ 
 {
-      background-color: rgba(211, 211, 211, 0.322);
       width: 85%;
       height: 90%;
       padding: 10%;
@@ -89,7 +88,7 @@ div  /*แถมด้านบนของเว็บ*/
 {
     text-align: center;
     font-size: 20px;
-    color: #ffffff;
+    color:#674ea7;
 }
 .logo 
 {   
@@ -202,25 +201,3 @@ button {
     transform: rotateX(-90deg);
   }
   
-/*Content Css*/
-.F-22
-{
-  position: absolute;
-  top: 30%;
-  right: 65%;
-}
-.F-22_Name
-{
-  position: absolute;
-  top: 20%;
-  right: 50%;
-  font-size: 40px;
-}
-.F-22_Info
-{
-  font-family: Audiowide;
-  font-size: 25px;
-  position: absolute;
-  top: 30%;
-  right: 18%;
-}
