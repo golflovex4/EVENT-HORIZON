@@ -30,3 +30,16 @@
       margin-bottom: 20%;
       border:none;
 }*/
+
+{
+    img :          "img/F-22.jpg",
+    name :         "",
+    Crew :         "Crew : ",
+    Fuel_Capacity : "FuelCapacity : ",
+    Maximum_Speed : "MaximumSpeed : ",
+    Range :         "Range : ",
+    Combat_Range :  "CombatRange : ",
+    Service_Ceiling:"Service_Ceiling : ",
+    Guns :          "Guns : ",
+    Maximum_Weapon_Capacity :   "Maximum weapon capacity :  "
+},

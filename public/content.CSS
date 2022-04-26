@@ -16,7 +16,10 @@
 }
 html,body{
     height: 100%;  /*fix ความสูง*/
-    margin:0;
+    margin:auto;
+    position: absolute;
+    width: 100%;
+  
 }
 a, button, p
 {
@@ -60,7 +63,7 @@ div  /*แถมด้านบนของเว็บ*/
 }
 .page1 /*ช่องคอนเท้น*/ 
 {
-      width: 85%;
+      width: 100%;
       height: 90%;
       padding: 10%;
       margin: 10%;
@@ -72,11 +75,10 @@ div  /*แถมด้านบนของเว็บ*/
 .page2  /*ช่องคอนเท้น*/ 
 {
       background-color: rgba(211, 211, 211, 0.322);
-      width: 85%;
+      width: 100%;
       height: 70%;
-      padding: 5%;
+      padding: 10%;
       margin: 0%;
-      margin-left: 7%;
       margin-top: 5%;
       margin-bottom: 15%;
       border:none;
