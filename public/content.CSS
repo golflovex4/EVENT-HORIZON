@@ -23,7 +23,7 @@ html,body{
 }
 a, button, p
 {
-    font-family: Audiowide;
+    font-family: Arial;
     color: var(--light);
 }
 a, button{
@@ -55,7 +55,7 @@ font-family: Audiowide;
 
 div  /*แถมด้านบนของเว็บ*/ 
 {
-    background-color: #0c4a95;
+    background-color: #041727;
     width: 100%;
     height: 80px;
     border:none;
@@ -74,24 +74,16 @@ div  /*แถมด้านบนของเว็บ*/
 }
 .page2  /*ช่องคอนเท้น*/ 
 {
-      background-color: rgba(211, 211, 211, 0.322);
+      background-color: #b899723a;
       width: 100%;
-      height: 70%;
+      height: 90%;
       padding: 10%;
       margin: 0%;
-      margin-top: 5%;
-      margin-bottom: 15%;
+      margin-top: 0%;
+      margin-bottom: 0%;
       border:none;
 }
 .con
-{
-    font-size: 25px;
-    color:black;
-    position: relative;
-    top: -62%;
-    left: 60%;
-}
-.con2
 {
     font-size: 40px;
     color:black;
@@ -99,9 +91,17 @@ div  /*แถมด้านบนของเว็บ*/
     top: -62%;
     left: 60%;
 }
+.con2
+{
+    font-size: 50px;
+    color:black;
+    position: relative;
+    top: -62%;
+    left: 60%;
+}
 h2
 {
-    font-family: Audiowide;
+    font-family: Verdana;
     font-size:50px;
     position: relative;
     font-weight:bold;
@@ -124,10 +124,6 @@ h2
     top: 2%;
     width: 25%;
 }
-
-
-
-
 
 /*Button*/
 button {
@@ -166,8 +162,8 @@ button {
     perspective: 230px;
   }
   .btn-12 span {
-    background: rgb(0,172,238);
-  background: linear-gradient(0deg,#4FD1C5 0%, #4FD1C5 100%);
+    background: #B89972;
+  background: linear-gradient(0deg,#af9474 0%, #b89265 100%);
     display: block;
     position: absolute;
     width: 130px;

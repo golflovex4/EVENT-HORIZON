@@ -19,7 +19,7 @@ html,body{
 a, button, p
 {
     font-family: Audiowide;
-    color: var(--light);
+    color: #B89972;
 }
 a, button{
     cursor: pointer; /*link element*/
@@ -34,7 +34,9 @@ main /*สร้างกริต*/
     
 }
 body{
-    background-color:#07162D;
+    background-color:#041727
+    
+    ;
     }
 article
 {
@@ -69,12 +71,12 @@ footer
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 700;
-    color: #1c1c4e;
-    background: #4FD1C5;
-   background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    color: #ffffff;
+    background: #B89972;
+   background: linear-gradient(90deg, #af9474 0%, #b89265 100%);
     border: none;
     border-radius: 1000px;
-    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    box-shadow: 12px 12px 24px #B89972;
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
@@ -87,8 +89,8 @@ button::before {
     border-radius: 1000px;
     min-width: calc(300px + 12px);
     min-height: calc(60px + 12px);
-    border: 6px solid #00FFCB;
-    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    border: 6px solid #B89972;
+    box-shadow: 0 0 60px #B89972;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -110,7 +112,7 @@ button::after {
     content: '';
     width: 30px; height: 30px;
     border-radius: 100%;
-    border: 6px solid #00FFCB;
+    border: 6px solid #B89972;
     position: absolute;
     z-index: -1;
     top: 50%;
