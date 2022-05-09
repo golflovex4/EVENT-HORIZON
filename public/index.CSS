@@ -18,7 +18,7 @@ html,body{
 }
 a, button, p
 {
-    font-family: Audiowide;
+    font-family: Lora;
     color: #B89972;
 }
 a, button{
@@ -60,7 +60,7 @@ footer
     position: absolute;
     top: 80%;
     width: 20%;
-    right: 42%;
+    right: 36%;
   }
   
 .button {
@@ -141,23 +141,23 @@ button:hover::after, button:focus::after {
 /*ตัวข้อความ*/
 .content1
 {
-    font-family: Audiowide;
+    font-family: Lora;
     color: rgba(255, 255, 255, 0.774);
     position: absolute;
     top: 25%;
     width: 100%;
     text-align: center;
-    font-size: 80px;
+    font-size: 120px;
 }
 .content2
 {
-    font-family: Audiowide;
+    font-family: Lora;
     color: rgba(255, 255, 255, 0.774);
     position: absolute;
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: 80px;
+    font-size: 120px;
 }
 .credit
 {
