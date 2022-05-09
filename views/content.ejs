@@ -6,11 +6,12 @@
     <!--Reference Google Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Aclonica'rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
-    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
 
     <!--Reference Social Media Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
- 
+    
+    
     <!--External CSS => 3rd Priority-->
     <link rel="stylesheet" href="content.CSS">
  
@@ -43,14 +44,14 @@
                         
                         <h2 class="headname"> <%= Plane.name %></h2>
                         <img class="img" src="<%= Plane.img %> " alt="pic" width="800" height="500">  
-                        <p class="con"> <%= Plane.Crew %></p>
-                        <p class="con"> <%= Plane.Fuel_Capacity %></p>
-                        <p class="con"> <%= Plane.Maximum_Speed %></p>
-                        <p class="con"> <%= Plane.Range %></p>
-                        <p class="con"> <%= Plane.Combat_Range %></p>
-                        <p class="con"> <%= Plane.Service_Ceiling %></p>
-                        <p class="con"> <%= Plane.Guns %></p>
-                        <p class="con"> <%= Plane.Maximum_Weapon_Capacity %></p>
+                        <p class="con"> <B> CREW:&nbsp; </B>                  <%= Plane.Crew %></p>
+                        <p class="con"> <B> Fuel Capacity:&nbsp; </B>         <%= Plane.Fuel_Capacity %></p>
+                        <p class="con"> <B> Maximum Speed:&nbsp; </B>         <%= Plane.Maximum_Speed %></p>
+                        <p class="con"> <B> Range:&nbsp; </B>                 <%= Plane.Range %></p>
+                        <p class="con"> <B> Combat Range:&nbsp; </B>          <%= Plane.Combat_Range %></p>
+                        <p class="con"> <B> Service Ceiling:&nbsp; </B>       <%= Plane.Service_Ceiling %></p>
+                        <p class="con"> <B> Guns:&nbsp; </B>                  <%= Plane.Guns %></p>
+                        <p class="con"> <B> Maximum Weapon Capacity:&nbsp; </B>   <%= Plane.Maximum_Weapon_Capacity %></p>
                     </div>
                     <% }) %>
                 
