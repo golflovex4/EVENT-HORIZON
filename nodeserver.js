@@ -2,7 +2,7 @@ const express = require('express') //install express: Terminal >npm install expr
 const app = express()
 const port = 8080
 
-var Plane = [
+var Plane = [  //จีน
     {
         img :          "img/J-20.jpg",
         name :         "Chengdu J-20",
@@ -137,7 +137,7 @@ var Plane = [
     }
 ];
 
-var Plane2 = [
+var Plane2 = [ 
     {
         img :          "img/E-2.jpg",
         name :         "Northrop Grumman E-2 Hawkeye",
@@ -534,6 +534,7 @@ app.get("/EUROPE",(req,res) =>{
 app.get("/RUSSIA",(req,res) =>{
     res.render('content', {obj_Plane : Plane4})
 })
+
 
 app.get("/index",(req,res) =>{
     res.render('index')
